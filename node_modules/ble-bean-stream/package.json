@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ble-bean-stream",
+        "scope": null,
+        "escapedName": "ble-bean-stream",
+        "name": "ble-bean-stream",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/rhvrabec/node/nodetest1"
+    ]
+  ],
+  "_from": "ble-bean-stream@latest",
+  "_id": "ble-bean-stream@0.1.0",
+  "_inCache": true,
+  "_location": "/ble-bean-stream",
+  "_nodeVersion": "5.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/ble-bean-stream-0.1.0.tgz_1462911547669_0.972007563104853"
+  },
+  "_npmUser": {
+    "name": "humansforward",
+    "email": "info@humansforward.com"
+  },
+  "_npmVersion": "3.7.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ble-bean-stream",
+    "scope": null,
+    "escapedName": "ble-bean-stream",
+    "name": "ble-bean-stream",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ble-bean-stream/-/ble-bean-stream-0.1.0.tgz",
+  "_shasum": "50279e6cbde01ae609523f3a4051e662041b8fec",
+  "_shrinkwrap": null,
+  "_spec": "ble-bean-stream",
+  "_where": "/Users/rhvrabec/node/nodetest1",
+  "author": {
+    "name": "J. Scott Smith",
+    "url": "https://about.me/jscottsmith"
+  },
+  "bugs": {
+    "url": "https://github.com/HumansForward/ble-bean-stream/issues"
+  },
+  "contributors": [
+    {
+      "name": "Paul Dhillon Weber",
+      "url": "https://www.linkedin.com/in/pauldhillonweber"
+    }
+  ],
+  "dependencies": {
+    "hooked-readable": "^0.1.0"
+  },
+  "description": "Take a bean instance from ble-bean and make it a Node stream.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "50279e6cbde01ae609523f3a4051e662041b8fec",
+    "tarball": "https://registry.npmjs.org/ble-bean-stream/-/ble-bean-stream-0.1.0.tgz"
+  },
+  "engines": {
+    "node": ">=4.4.3"
+  },
+  "gitHead": "f677dfcde7278b9b68c0d306b455087021473e05",
+  "homepage": "https://github.com/HumansForward/ble-bean-stream#readme",
+  "keywords": [
+    "bean",
+    "ble",
+    "logging",
+    "stream"
+  ],
+  "license": "MIT",
+  "main": "./lib/ble-bean-stream",
+  "maintainers": [
+    {
+      "name": "humansforward",
+      "email": "info@humansforward.com"
+    }
+  ],
+  "name": "ble-bean-stream",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HumansForward/ble-bean-stream.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
+}

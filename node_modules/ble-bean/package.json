@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ble-bean",
+        "scope": null,
+        "escapedName": "ble-bean",
+        "name": "ble-bean",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/rhvrabec/node/nodetest1"
+    ]
+  ],
+  "_from": "ble-bean@latest",
+  "_id": "ble-bean@2.1.1",
+  "_inCache": true,
+  "_location": "/ble-bean",
+  "_nodeVersion": "2.3.4",
+  "_npmUser": {
+    "name": "jjrosent",
+    "email": "jakerosenthal@gmail.com"
+  },
+  "_npmVersion": "2.12.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ble-bean",
+    "scope": null,
+    "escapedName": "ble-bean",
+    "name": "ble-bean",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ble-bean/-/ble-bean-2.1.1.tgz",
+  "_shasum": "9b2821ef9d9d00d9596cbe1f161ba7f8a00fc61e",
+  "_shrinkwrap": null,
+  "_spec": "ble-bean",
+  "_where": "/Users/rhvrabec/node/nodetest1",
+  "author": {
+    "name": "Jacob Rosenthal"
+  },
+  "bugs": {
+    "url": "https://github.com/jacobrosenthal/ble-bean/issues"
+  },
+  "dependencies": {
+    "crc": "^2.1.1",
+    "noble": "^1.2.0",
+    "noble-device": "^1.1.0"
+  },
+  "description": "Lightblue Bean BLE Services",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "dist": {
+    "shasum": "9b2821ef9d9d00d9596cbe1f161ba7f8a00fc61e",
+    "tarball": "https://registry.npmjs.org/ble-bean/-/ble-bean-2.1.1.tgz"
+  },
+  "gitHead": "aa9ec821727fc2783751a6a404dd13a4b923bf9e",
+  "homepage": "https://github.com/jacobrosenthal/ble-bean#readme",
+  "keywords": [
+    "ble",
+    "bean",
+    "punchthrough",
+    "service",
+    "noble"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "jjrosent",
+      "email": "jakerosenthal@gmail.com"
+    }
+  ],
+  "name": "ble-bean",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobrosenthal/ble-bean.git"
+  },
+  "scripts": {
+    "test": "mocha --include test/*.js test/*.js --reporter spec"
+  },
+  "version": "2.1.1"
+}
