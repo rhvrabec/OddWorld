@@ -11,9 +11,12 @@ const Bean = require('ble-bean');
 const beanStream = require('ble-bean-stream');
 const Transform = require('stream').Transform;
 
-const DATABASE = 'mongodb://localhost/ble_bean_stream';
+var MongoClient = require('mongodb').MongoClient
+  ,assert = require('assert');
+
+const DATABASE = 'mongodb://localhost:27017/ble_bean_stream';
 const COLLECTION = 'scratch_data';
-const MongoWritableStream = require('mongo-writable-stream');
+var MongoWritableStream = require('mongo-writable-stream');
 
 let connectedBean;
 let triedToExit = false;
@@ -49,7 +52,7 @@ Bean.discover((bean) => {
     notifyScratch: '1,2,3',
 
     //set temp and accel polling
-    poll:1000,
+    poll:100,
     pollTemp: true,
     beforePush: function(data) { data.timestamp = new Date(); return data; }
     //pollAccel: true,
@@ -62,13 +65,14 @@ Bean.discover((bean) => {
   });
 
   //Setup Mongo Streaming
-  let mongoWritable = new MongoWritableStream({
+  var stream = new MongoWritableStream({
     url: DATABASE,
-    COLLECTION: COLLECTION
+    collection: COLLECTION,
+    upsert: "true"
   });
 
   console.log("Streaming scratch notifications to '%s', press ctrl-c to stop.", COLLECTION);
-  beanReadable.pipe(new DocFilter).pipe(mongoWritable);
+  beanReadable.pipe(new DocFilter).pipe(stream);
 
   //Exit when the stream ends
   beanReadable.once('end', () => process.exit());
